@@ -1,12 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
 </head>
+
 <body>
 
 
-    <div id="data" style="visibility:hidden;"></div>
+    <div id="data"></div>
 
 
     <script src="js/jquery.min.js"></script>
@@ -14,23 +16,27 @@
 
     <script type="text/javascript">
 
-        $(document).ready(function () {
+//in yek khat cod ahm=ameeat ziadi darad
+
+'use strict';
+
+$(document).ready(function () {
 
             var xx;
+
 
             bluetoothSerial.connect('00:21:13:04:55:3A', '', '');
 
             bluetoothSerial.read(xx, failure);
 
-           if (xx == 'ss')
-           {
-               //alert('');
-           }
+            if (xx == 'ss') {
+                //alert('');
+            }
 
         });
-
     </script>
 
 
 </body>
+
 </html>
